@@ -1,0 +1,69 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Form container styles */
+  .Gridder {
+    /* max-width: 600px; */
+    width: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 10px; /* Adjust gap as needed */
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  }
+  .Container{
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+  }
+  
+  
+  /* Form label styles */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Form input styles */
+  input,
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Form button styles */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+  }
+
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

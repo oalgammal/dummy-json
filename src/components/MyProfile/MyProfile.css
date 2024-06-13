@@ -1,0 +1,50 @@
+/* userProfile.css */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Gap between grid items */
+  justify-items: center; /* Center items horizontally */
+}
+
+.field {
+  width: 100%; /* Full width of each grid item */
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.field label {
+  font-weight: bold;
+}
+
+.field input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.field .saveButton, .field .editButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.field .saveButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.field .editButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
