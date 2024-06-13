@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import MyProfile from '../components/MyProfile'
+import { AuthContext } from '../helpers/AuthProvider'
 
 
 
 function MyProfilePage() {
+    const {isLoggedIn}= useContext(AuthContext)
 
     return (
-       <MyProfile/>
+        <>
+       {isLoggedIn?
+        <MyProfile/>:<h1>Please login first</h1>
+       }
+        </>
     )
 }
 
